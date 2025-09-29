@@ -25,7 +25,12 @@
 
     </div>
 
-      <script>
+      <script type="module">
+        import {getAllCards} from '../src/api/index.js';
+
+        const {data}=await getAllCards();
+
+        console.log(data);
 
         document.getElementById("root").innerText='hello world!';
 
